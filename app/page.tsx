@@ -35,7 +35,7 @@ export default function Home() {
           Innovate For <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">Greater Good</span>
         </p>
         <p className="fixed left-0 top-0 flex font-normal text-white text-lg max-w-2xl justify-center border-b border-gray-300 pb-6 pt-8 dark:border-neutral-800 lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4">
-          Join the innovation spree for a better future this March with HackNITDGP 2024, one of Eastern India's largest Hackathon.
+          Join the innovation spree for a better future this March with HackNITDGP 2024, one of Eastern India&apos;s largest Hackathon.
         </p>
 
         <p className="fixed left-0 top-0 flex font-bold gap-4 text-white text-lg max-w-2xl justify-center border-b border-gray-300 dark:border-neutral-800 lg:static lg:w-auto lg:rounded-xl lg:border lg:p-4">
