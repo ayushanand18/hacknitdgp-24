@@ -1,4 +1,5 @@
 "use client"
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -22,7 +23,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col z-10 max-w-6xl w-full items-start justify-between text-sm lg:flex my-8">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.15,
+          duration: 0.95,
+          ease: [0.165, 0.84, 0.44, 1],
+        }} className="flex flex-col z-10 max-w-6xl w-full items-start justify-between text-sm lg:flex my-8">
         <p className="fixed left-0 top-0 font-bold text-white text-8xl max-w-2xl justify-center border-b border-gray-300 pb-6 pt-8 backdrop-blur dark:border-neutral-800 lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4">
           Innovate For <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">Greater Good</span>
         </p>
@@ -34,9 +42,17 @@ export default function Home() {
           <span className="font-light">9-10th March 2024</span>
           <span className="">Registrations Opening Soon</span>
         </p>
-      </div>
+      </motion.div>
 
-      <div className="my-4 grid text-center lg:max-w-6xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <motion.div
+        initial={{ opacity: 0, x: -40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          delay: 0.15,
+          duration: 0.95,
+          ease: [0.165, 0.84, 0.44, 1],
+        }}
+        className="my-4 grid text-center lg:max-w-6xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="#"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -104,7 +120,7 @@ export default function Home() {
             Want to get your brand noticed here, partner with us!
           </p>
         </a>
-      </div>
+      </motion.div>
     </main>
   );
 }
