@@ -25,10 +25,25 @@ export default function Home() {
   }, []);
 
   const prizes = [
-    {title: 'Winner', subtitle: 'All Tracks', description: 'FREE Domain Name for an year. Host your website on your custom domain using a GoDaddy Domain.'},
-    {title: 'Best hack built on Polygon: $200', subtitle: 'Web3 Track', description: 'Read about the bounty details and find code templates for Polygon here: https://nsb.dev/polygon-bounty.'},
-    {title: 'Best hack built on Ethereum: $100', subtitle: 'Web3 Track', description: "Select this track if you're building on Ethereum to be eligible for the prizes!"},
-  ]
+    {
+      title: "Winner",
+      subtitle: "All Tracks",
+      description:
+        "FREE Domain Name for an year. Host your website on your custom domain using a GoDaddy Domain.",
+    },
+    {
+      title: "Best hack built on Polygon: $200",
+      subtitle: "Web3 Track",
+      description:
+        "Read about the bounty details and find code templates for Polygon here: https://nsb.dev/polygon-bounty.",
+    },
+    {
+      title: "Best hack built on Ethereum: $100",
+      subtitle: "Web3 Track",
+      description:
+        "Select this track if you're building on Ethereum to be eligible for the prizes!",
+    },
+  ];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 bg-[url('https://assets.squarespace.com/universal/images-v6/parking-page/black-grid-1500w.avif')]">
       <nav className="rounded-lg w-full bg-opacity-50 bg-black text-white py-4 px-8 flex justify-between items-center">
@@ -117,7 +132,12 @@ export default function Home() {
       </motion.div>
 
       <div className="w-full px-4 items-center flex flex-col flex-wrap">
-        <Image src={BannerImage} height="300" width="800" alt="hackathon banner"/>
+        <Image
+          src={BannerImage}
+          height="300"
+          width="800"
+          alt="hackathon banner"
+        />
       </div>
       <div className="flex flex-col w-full p-10 justify-center gap-12">
         <h3 className="text-whte text-4xl font-black">Sponsors</h3>
@@ -150,16 +170,18 @@ export default function Home() {
         <h3 className="text-whte text-4xl font-black">Prizes</h3>
         <div className="flex flex-col space-y-6">
           {prizes.map((prize, index) => (
-            <div className="flex items-center space-x-4 ">
-            <div className="w-1 h-36 bg-gradient-to-b from-purple-500 to-pink-500" />
-            <div className="gap-y-2 flex flex-col">
-              <h3 className="text-2xl py-2 font-semibold underline underline-offset-8">{prize.title}</h3>
-              <h4 className="text-lg text-slate-200">{prize.subtitle}</h4>
-              <p className="text-sm text-slate-200 max-w-md">
-                {prize.description}
-              </p>
+            <div key={index} className="flex items-center space-x-4 ">
+              <div className="w-1 h-36 bg-gradient-to-b from-purple-500 to-pink-500" />
+              <div className="gap-y-2 flex flex-col">
+                <h3 className="text-2xl py-2 font-semibold underline underline-offset-8">
+                  {prize.title}
+                </h3>
+                <h4 className="text-lg text-slate-200">{prize.subtitle}</h4>
+                <p className="text-sm text-slate-200 max-w-md">
+                  {prize.description}
+                </p>
+              </div>
             </div>
-          </div>
           ))}
         </div>
       </div>
