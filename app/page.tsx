@@ -3,7 +3,7 @@ import RightArrow from "@/components/RightArrow";
 import { motion } from "framer-motion";
 import * as React from "react";
 import Image from "next/image";
-import { MapPin } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Hourglass, MapPin } from "lucide-react";
 import ETHLogo from "@/assets/ethindia-light.png";
 import DevfolioLogo from "@/assets/Devfolio_Logo-White.png";
 import PolygonLogo from "@/assets/Polygon_Logo-White@2x.png";
@@ -102,8 +102,8 @@ export default function Home() {
           </span>
         </p>
         <p className="md:fixed left-0 top-0 flex font-normal text-white text-lg max-w-2xl justify-center border-b border-gray-300 pb-6 pt-8 dark:border-neutral-800 lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4">
-          Join the innovation spree for a better future this March with NITDGP
-          Hacks 1.0, one of Eastern India&apos;s largest Hackathon.
+          Join the innovation spree for a better future this January with the second edition of NITDGP
+          Hacks 2.0, one of Eastern India&apos;s largest Hackathon.
         </p>
 
         <p className="md:fixed left-0 top-0 flex flex-col items-center font-bold text-white text-lg max-w-2xl justify-center border-b border-gray-300 dark:border-neutral-800 lg:static lg:w-auto lg:rounded-xl lg:border lg:p-4">
@@ -117,7 +117,7 @@ export default function Home() {
           </span>
 
           <span className="text-2xl font-bold">
-            9 - 10<sup>th</sup> March 2024
+            18 - 20<sup>th</sup> January 2025
           </span>
 
           <div className="flex flex-row">
@@ -132,16 +132,16 @@ export default function Home() {
       </motion.div>
 
       <div className="w-full px-4 items-center flex flex-col flex-wrap">
-        <Image
+        {/* <Image
           src={BannerImage}
           height="300"
           width="800"
           alt="hackathon banner"
-        />
+        /> */}
       </div>
-      <div className="flex flex-col w-full p-10 justify-center gap-12">
-        <h3 className="text-whte text-4xl font-black">Sponsors</h3>
-        <div className="flex flex-row gap-6">
+      <div className="flex flex-col w-full p-10 py-14 justify-center gap-12">
+        <h3 className="text-whte text-4xl font-black">Call for Sponsors</h3>
+        {/* <div className="flex flex-row gap-6">
           <Image
             height="100"
             alt="DEVFOLIO LOGO"
@@ -163,13 +163,21 @@ export default function Home() {
             width="300"
             src={ETHLogo}
           />
-        </div>
+        </div> */}
+        <Button className="bg-white text-black max-w-fit"> 
+          Checkout Sponsorship Docs
+          <ArrowUpRight />
+        </Button>
       </div>
 
       <div className="flex flex-col w-full p-10 justify-center gap-12">
         <h3 className="text-whte text-4xl font-black">Prizes</h3>
         <div className="flex flex-col space-y-6">
-          {prizes.map((prize, index) => (
+          <Button className="bg-white text-black max-w-fit"> 
+            Prizes to be declared soon.
+            <Hourglass />
+          </Button>
+          {/* {prizes.map((prize, index) => (
             <div key={index} className="flex items-center space-x-4 ">
               <div className="w-1 h-36 bg-gradient-to-b from-purple-500 to-pink-500" />
               <div className="gap-y-2 flex flex-col">
@@ -182,7 +190,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
       <motion.div
