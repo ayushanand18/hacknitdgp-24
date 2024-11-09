@@ -13,16 +13,16 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Home() {
-  React.useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  // React.useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "https://apply.devfolio.co/v2/sdk.js";
+  //   script.async = true;
+  //   script.defer = true;
+  //   document.body.appendChild(script);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
   const prizes = [
     {
@@ -117,7 +117,7 @@ export default function Home() {
           </span>
 
           <span className="text-2xl font-bold">
-            18 - 20<sup>th</sup> January 2025
+            February 1 - 2 <sup>nd</sup>, 2025
           </span>
 
           <div className="flex flex-row">
@@ -164,16 +164,18 @@ export default function Home() {
             src={ETHLogo}
           />
         </div> */}
-        <Button className="bg-white text-black max-w-fit"> 
-          Checkout Sponsorship Docs
-          <ArrowUpRight />
-        </Button>
+        <Link href="/sponsorship-docs-nitdgp-hacks.pdf">
+          <Button className="bg-white text-black max-w-fit">
+            Checkout Sponsorship Docs
+            <ArrowUpRight />
+          </Button>
+        </Link>
       </div>
 
       <div className="flex flex-col w-full p-10 justify-center gap-12">
         <h3 className="text-whte text-4xl font-black">Prizes</h3>
         <div className="flex flex-col space-y-6">
-          <Button className="bg-white text-black max-w-fit"> 
+          <Button className="bg-white text-black max-w-fit">
             Prizes to be declared soon.
             <Hourglass />
           </Button>

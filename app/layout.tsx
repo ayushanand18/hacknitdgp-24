@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HackNITDGP 2024",
+  title: "NITDGP Hacks 2.0 - 2025",
   description: "ISTE Students' Chapter NIT Durgapur",
 };
 
