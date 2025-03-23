@@ -73,7 +73,7 @@ export default function Home() {
           </a>
           <a
             className="hover:text-blue-500"
-            href="https://www.istenitdgp.com/teams"
+            href="https://www.istenitdgp.com/team"
           >
             Team
           </a>
@@ -102,7 +102,7 @@ export default function Home() {
           </span>
         </p>
         <p className="md:fixed left-0 top-0 flex font-normal text-white text-lg max-w-2xl justify-center border-b border-gray-300 pb-6 pt-8 dark:border-neutral-800 lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4">
-          Join the innovation spree for a better future this January with the second edition of NITDGP
+          Join the innovation spree for a better future this March with the second edition of NITDGP
           Hacks 2.0, one of Eastern India&apos;s largest Hackathon.
         </p>
 

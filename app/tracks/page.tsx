@@ -75,7 +75,7 @@ export default function Home() {
           </a>
           <a
             className="hover:text-blue-500"
-            href="https://www.istenitdgp.com/teams"
+            href="https://www.istenitdgp.com/team"
           >
             Team
           </a>
