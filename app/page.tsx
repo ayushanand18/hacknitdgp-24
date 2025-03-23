@@ -117,7 +117,7 @@ export default function Home() {
           </span>
 
           <span className="text-2xl font-bold">
-            February 1 - 2 <sup>nd</sup>, 2025
+            March 29 - 30<sup>th</sup>, 2025
           </span>
 
           <div className="flex flex-row">
@@ -164,7 +164,7 @@ export default function Home() {
             src={ETHLogo}
           />
         </div> */}
-        <Link href="/sponsorship-docs-nitdgp-hacks.pdf">
+        <Link href="/Sponsorship docs - NITDGP Hacks 2.0.pdf">
           <Button className="bg-white text-black max-w-fit">
             Checkout Sponsorship Docs
             <ArrowUpRight />
@@ -257,7 +257,7 @@ export default function Home() {
         </a>
 
         <a
-          href="/sponsorship-docs-nitdgp-hacks.pdf"
+          href="/Sponsorship docs - NITDGP Hacks 2.0.pdf"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
